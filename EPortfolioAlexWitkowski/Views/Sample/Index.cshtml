@@ -1,0 +1,93 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Projects";
+}
+
+<h2>Project Gallery</h2>
+<h3></h3>
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="@Url.Action("FlashNav", "Sample")">
+                    <img src="~/Resources/FlashNav/FlashNavSlpash.png" class="imgProject" />
+                </a>
+                
+                <h3>Flash - Gallery</h3>
+                
+            </div>
+            <div class="panel-body">
+                <p>
+                    Flash gallery that demonstrates navigation and onclick events. @Html.ActionLink("View More", "FlashNav", "Sample")
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="@Url.Action("ePortfolio", "Sample")">
+                    <img src="~/Resources/ePort/eportThumb.jpg" class="imgProject" />
+                </a>
+            <h3>MVC5 - ePortfolio</h3>
+            </div>
+            <div class="panel-body">
+                An MVC5 website that i designed as my ePortfolio. @Html.ActionLink("View More", "ePortfolio", "Sample")
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="@Url.Action("Cards3D", "Sample")">
+                    <img src="~/Resources/Cards3D/spadesdeck.jpg" class="imgProject" />
+                </a>
+                
+            <h3>3D Modeling - Demo Image</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    3D image of a deck of cards, created in 3D Studio Max. @Html.ActionLink("View More", "Cards3D", "Sample")
+                </p>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3>Hello.</h3></div>
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                Aliquam in felis sit amet augue.
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3>Hello.</h3></div>
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                Aliquam in felis sit amet augue.
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3>Hello.</h3></div>
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                Aliquam in felis sit amet augue.
+            </div>
+        </div>
+    </div>
+</div>

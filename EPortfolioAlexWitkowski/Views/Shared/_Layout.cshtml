@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Style/CustomStyles.css" rel="stylesheet" />
+    <link href="~/Content/Style/Carousel.css" rel="stylesheet" />
+    <link runat="server" rel="shortcut icon" href="~/Resources/Images/favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="~/Resources/Images/favicon.ico" type="image/ico" />
+
+
+    
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Alex Witkowski", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!--<li>@Html.ActionLink("Home", "Index", "Home")</li> -->
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ePortfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Directory", "Index", "ePortfolio")</li>                         
+                            <li>@Html.ActionLink("Resume", "Resume", "ePortfolio")</li>
+                            <li>@Html.ActionLink("Education", "Education", "ePortfolio")</li>
+                            <!-- <li class="divider"></li> -->
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Projects", "Index", "Sample")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div id="wrapper" class="wrapper">
+            @RenderBody()
+            <hr />
+        </div>
+        <footer class="Footer">
+            
+            <p>
+                &copy; @DateTime.Now.Year - Alex Witkowski e-Portfolio
+                <a href="https://github.com/AlexWitkowski"><img class="miniSocial" src="~/Resources/Images/Social/GitHub-Mark-50px2.png" /></a>
+                <a href="https://www.facebook.com/Alex.Witkowski99"><img class="miniSocial" src="~/Resources/Images/Social/facebook50px.png" /></a>
+                <a href="https://www.linkedin.com/pub/alex-witkowski/a3/307/32"><img class="miniSocial" src="~/Resources/Images/Social/linkedin50px.png" /></a>
+                <a href="https://plus.google.com/u/0/103099680329635924265/posts"><img class="miniSocial" src="~/Resources/Images/Social/googleplus-250px.png" /></a>
+                <a href="https://twitter.com/alexwitkowski99"><img class="miniSocial" src="~/Resources/Images/Social/twitter50px.png" /> </a>
+                
+            </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

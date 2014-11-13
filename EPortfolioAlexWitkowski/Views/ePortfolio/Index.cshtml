@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "ePortfolio";
+}
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/assets/example/bg_suburb.jpg" class="img-responsive">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Resume</h1>
+                    <p>Designed For You</p>
+                    <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p></p>
+          <p>@Html.ActionLink("About Me", "About", "Home", null, new {@class = "btn btn-large btn-primary"})
+        </p></pthis>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/emptyLibrary.JPG" class="img-responsive">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>e-Portfolio</h1>
+                    <p>A viewable and downloadable version of my resume and academic achievements</p>
+                    <p><a class="btn btn-large btn-primary" href="#">View My e-Portfolio</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="http://placehold.it/1500X500" class="img-responsive">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Projects</h1>
+                    <p>Examples of my various works</p>
+                    <p><a class="btn btn-large btn-primary" href="#">Browse Gallery</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</div>
+<!-- /.carousel -->
+<!-- Marketing messaging and featurettes
+================================================== -->
+

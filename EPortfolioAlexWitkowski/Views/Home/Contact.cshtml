@@ -1,0 +1,44 @@
+﻿
+
+@{
+    ViewBag.Title = "Contact";
+}
+<h2>Contact</h2>
+
+    <h3>Mailing Address</h3>
+    <address>
+        Alex Witkowski<br />
+        Niagara Falls, Ontario, Canada<br />
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <p>
+                        5706 Belmont Avenue<br />
+                        L2H 1J7
+                        <a href="https://www.google.com/maps/place/5706+Belmont+Ave,+Niagara+Falls,+ON+L2H+1J8,+Canada">
+                    <p>View On Map</p> </a>
+                    </p>
+        }
+                
+
+                
+            </address>
+
+
+
+
+    <h3>Phone &amp; Email</h3>
+    <address>
+        <strong>Phone:</strong>   213.289.2244<br />
+        <strong>Email:</strong>   <a href="mailto:Alex.Witkowski99@live.com">Alex.Witkowski99@live.com</a><br />
+    </address>
+
+
+<h3>Social</h3>
+<address>
+    <a href="https://twitter.com/alexwitkowski99"><img class="social" src="~/Resources/Images/Social/twitter50px.png" /> </a>
+    <a href="https://plus.google.com/u/0/103099680329635924265/posts"><img class="social" src="~/Resources/Images/Social/googleplus-250px.png" /></a>
+    <a href="https://www.linkedin.com/pub/alex-witkowski/a3/307/32"><img class="social" src="~/Resources/Images/Social/linkedin50px.png" /></a>
+    <a href="https://www.facebook.com/Alex.Witkowski99"><img class="social" src="~/Resources/Images/Social/facebook50px.png" /></a>
+    <a href="https://github.com/AlexWitkowski"><img class="social" src="~/Resources/Images/Social/GitHub-Mark-50px2.png" /></a>
+
+</address>
